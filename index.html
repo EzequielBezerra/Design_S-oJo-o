@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cadastro</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/e3e0ab7579.js" crossorigin="anonymous"></script>
+    <style>
+        /* Adicione estilos adicionais conforme necessário */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remova as margens padrão do body */
+            padding: 0; /* Remova o preenchimento padrão do body */
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: #343a40;
+            padding: 10px;
+            color: #d3d3d3; /* Cinza claro */
+        }
+
+        #menu-btn {
+            background-color: transparent;
+            border: none;
+            color: #d3d3d3; /* Cinza claro */
+            cursor: pointer;
+        }
+
+        .menu-options {
+            display: flex;
+            gap: 10px;
+        }
+
+        .menu-options a {
+            text-decoration: none;
+            color: #d3d3d3; /* Cinza claro */
+        }
+
+        .menu-options a:hover {
+            text-decoration: underline;
+        }
+
+        /* ... Outros estilos ... */
+
+        .container {
+            padding: 20px; /* Adicione algum preenchimento para separar o conteúdo do topo */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <button id="menu-btn">Menu</button>
+        <div class="menu-options" id="menu-options">
+            <a href="noticias.html">Notícias</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="saq.html">SAQ</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="content first-content">
+
+            <div class="first-column">
+                <h2 class="title title-primary">Bem Vindo!</h2>
+                <p class="description description-primary">Preencha os campos </p>
+                <p class="description description-primary">para realizar o cadastro</p>
+                <button id="signin" class="btn btn-primary">entrar</button>
+            </div><!-- FIRST-COLUMN -->
+
+            <div class="second-column">
+                <h2 class="title title-sec">Portal São João</h2>
+                <h2 class="title title-second">criar conta</h2>
+                <div class="social-midia">
+                    <ul class="list-social-midia">
+                        
+                </div><!-- SOCIAL-MIDIA -->
+                <p class="description description-second">registre-se com seu email</p>
+                <form class="form">
+                    <label class="label-input icon-modify" for="">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+                    <label class="label-input icon-modify" for="">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <label class="label-input icon-modify" for="">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <button class="btn btn-second">registre-se</button>
+                    <img src="https://www.saojoao.pe.gov.br/imagens/simbolos_logo.png" alt="Descrição da Imagem">
+                </form>
+            </div><!-- SECOND-COLUMN -->
+
+        </div><!-- CONTENT FIRST-CONTENT -->
+
+        <div class="content second-content">
+
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, bem-vindo!</h2>
+                <p class="description description-primary">Insira seus dados pessoais</p>
+                <p class="description description-primary">para realizar o login.</p>
+                <button id="signup" class="btn btn-primary">registre-se</button>
+            </div><!-- FIRST-COLUMN -->
+
+            <div class="second-column">
+                <h2 class="title title-sec">Portal São João</h2>
+                <h2 class="title title-second">Entre na sua conta</h2>
+                <div class="social-midia">
+                    <ul class="list-social-midia">
+                        
+                </div><!-- SOCIAL-MIDIA -->
+                <p class="description description-second">conectar-se com seu email</p>
+                <form class="form">
+                    <label class="label-input icon-modify" for="">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <label class="label-input icon-modify" for="">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <a class="password" href="#">esqueceu a senha?</a>
+                    <button class="btn btn-second">entrar</button>
+                    <img src="https://www.saojoao.pe.gov.br/imagens/simbolos_logo.png" alt="Descrição da Imagem">
+                </form>
+            </div><!-- SECOND-COLUMN -->
+
+        </div><!-- CONTENT SECOND-CONTENT -->
+
+    </div><!-- CONTAINER -->
+
+    <!-- IMPORT JAVASCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+</html>

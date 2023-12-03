@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAQ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #a09f9f;
+        }
+
+        .navbar-dark .navbar-toggler:hover .navbar-toggler-icon {
+            background-color: #1a1919;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ccc;
+        }
+
+        .saq-container {
+            text-align: center;
+        }
+
+        .saq-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .faq-section {
+            margin-top: 20px;
+        }
+
+        .faq-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .conversation-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .conversation-balloon {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 70%;
+            text-align: left;
+        }
+
+        .profile-icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+
+        .user-input {
+            width: 70%;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        .send-icon {
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .footer-image {
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Notícias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Entrar na conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Criar conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="saq-container">
+        <div class="saq-title">SAQ</div>
+
+        <div class="faq-section">
+            <div class="faq-title">Perguntas Frequentes</div>
+            <hr>
+            <div class="conversation-section">
+                <div class="conversation-balloon">Como posso ajudar?</div>
+                <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/7296443-user-icon-person-icon-client-symbol-profile-icon-vetor.jpg" alt="Profile Icon" class="profile-icon">
+            </div>
+
+            <div class="faq-section">
+                <div class="faq-title">Perguntas Frequentes</div>
+                <div class="conversation-section">
+                    <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/7296443-user-icon-person-icon-client-symbol-profile-icon-vetor.jpg" alt="Message Icon" class="balloon-icon">
+                    <div class="conversation-balloon">Estou com dúvidas a respeito de ...</div>
+                </div>
+
+                <input type="text" class="user-input" placeholder="Digite aqui">
+                <button class="send-icon">&#10148;</button>
+            </div>
+        </div>
+
+        <img src="https://www.saojoao.pe.gov.br/imagens/simbolos_logo.png" alt="Outra Imagem" class="footer-image">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuBtn = document.querySelector('.navbar-toggler');
+            var navbarNav = document.querySelector('#navbarNav');
+
+            menuBtn.addEventListener('click', function () {
+                navbarNav.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

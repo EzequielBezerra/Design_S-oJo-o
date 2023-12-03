@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre o portal São João</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .header h1 {
+            color: #000;
+        } 
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #a09f9f;
+        }
+
+        .navbar-nav a {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .navbar-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-box {
+            text-align: right;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-form input {
+            margin-right: 5px;
+        }
+
+        .about-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-section img {
+            width: 150px;
+            height: auto;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer img {
+            width: 100px;
+            height: auto;
+        }
+
+        .rounded-image {
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Portal São João</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="menu-btn"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="noticias.html">Notícias</a>
+                <a class="nav-item nav-link" href="index.html">Entrar na sua conta</a>
+                <a class="nav-item nav-link" href="index.html">Criar conta</a>
+                <a class="nav-item nav-link" href="saq.html">SAQ</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <form class="form-inline search-form">
+                <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="about-section">
+        <h2>Sobre</h2>
+        <p>Rua augusto peixoto, n31 São João - PE 55435-000 (87) 3784-1146</p>
+        <h2>Prefeito</h2>
+        <img src="https://blogrevistatotal.com.br/wp-content/uploads/2023/01/74778983-A4F4-4B0A-A0DE-31FCD88F634E.jpeg" alt="Imagem" class="rounded-image">
+        <h2>Wilson Lima</h2>
+    </div>
+
+    <div class="footer">
+        <img src="https://www.saojoao.pe.gov.br/imagens/simbolos_logo.png" alt="Outra Imagem">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            var menuOptions = document.getElementById('navbarNav');
+            menuOptions.style.display = (menuOptions.style.display === 'none' || menuOptions.style.display === '') ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
