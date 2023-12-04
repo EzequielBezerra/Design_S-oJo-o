@@ -20,3 +20,28 @@ document.addEventListener('DOMContentLoaded', function () {
       menuOptions.style.display = (menuOptions.style.display === 'block') ? 'none' : 'block';
     });
   });
+
+  /* Senha*/
+
+  function alterarSenha() {
+    var newPassword = document.getElementById('newPassword').value;
+  
+    if (newPassword.length >= 6 && /[!@#$%^&*(),.?":{}|<>]/.test(newPassword)) {
+      // Simulação de confirmação por e-mail
+      var emailConfirmation = prompt("Digite o código de confirmação enviado para o seu e-mail:");
+  
+      if (emailConfirmation) {
+        alert("Senha alterada com sucesso!");
+      } else {
+        alert("Código de confirmação inválido. Alteração de senha cancelada.");
+      }
+    } else {
+      alert("A senha deve ter no mínimo 6 caracteres e incluir pelo menos um caractere especial.");
+    }
+  }
+  
+  function cancelar() {
+    alert("Alteração de senha cancelada");
+  }
+  
+  

@@ -1,14 +1,80 @@
 /* IMPORT FONT OPEN SANS */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
 /* Adicione ao seu arquivo CSS para estilizar a imagem */
 .logo-img {
-    width: 150px; /* Defina a largura desejada para a imagem */
+    width: 150px; /* Definir a largura desejada para a imagem */
     display: block;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Style da tela "Esqueceu a senha" */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #4CAF50;
+    padding: 15px;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 2px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  #cancelBtn {
+    background-color: #FF0000;
+    margin-top: 10px;
+  }
+  
+  #submitBtn {
+    background-color: #4CAF50;
+    margin-top: 10px;
+  }
+  
 /* SAQ*/
 
 body {
@@ -90,12 +156,12 @@ body {
 
 
 
-/* Adicione esta regra para mudar a cor do título para preto */
+/* Adicionando esta regra para mudar a cor do título para preto */
 .top-bar h1 {
     color: black;
   }
   
-  /* Adicione esta regra para mostrar e esconder o menu */
+  /* Adicionando esta regra para mostrar e esconder o menu */
 .menu-options {
     display: none;
   }
@@ -172,8 +238,8 @@ body {
   }
 
 .title-sec {
-    font-size: 24px; /* Tamanho da fonte desejado */
-    color: #000000; /* Cor desejada, você pode substituir pelo código ou nome da cor desejada */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #000000; /* Cor desejada*/
 }
 
 /* RESETS */
